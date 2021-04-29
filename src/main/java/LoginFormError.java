@@ -13,6 +13,7 @@ public class LoginFormError {
         driver.findElement(By.name("password")).sendKeys("1111");
         driver.findElement(By.xpath("//*[@value='Login']")).click();
         driver.findElement(By.className("Oops, error. Email and/or password don't match our records"));
+        driver.quit();
 
     }
 }
